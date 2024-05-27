@@ -1,0 +1,15 @@
+<h2><%= @flat.name %></h2>
+<p><%= @flat.address %></p>
+<p><%= @flat.description %></p>
+
+<p>
+  <i class="fa-solid fa-dollar-sign"></i>
+  <%= @flat.price_per_night %>
+</p>
+
+<p>
+  <i class="fa-solid fa-person"></i>
+  <%= @flat.number_of_guests %>
+</p>
+
+<%= link_to "Edit Flat", edit_flat_path(@flat.id) %>
